@@ -7,15 +7,18 @@ http.createServer(function (req, res) {
 console.log(`Server Started! Please visit http://127.0.0.1:${port}`);*/
 
 function pyramid (a:number):void{
-    var b:String = '';
     for(var  i:number = 0; i<a; i++){
-        for(var j:number = a-i-1; j >= 0 ; j--){
-            b += ' ';
+        //console.log('i:' + i);
+        var b:String = '';
+        for(var j:number = 0; j < a-i-1 ; j++){
+            b += '0';
+            //console.log('j:' + j);
         }
         for(var k:number = 0; k<i+1; k++){
             b += '*';
+            //console.log('k:' + k);
         }
-        console.log(b);
+        console.log(b + '\n');
     }
 }
 

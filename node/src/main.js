@@ -6,15 +6,16 @@ http.createServer(function (req, res) {
 }).listen(port);
 console.log(`Server Started! Please visit http://127.0.0.1:${port}`);*/
 function pyramid(a) {
-    var b = '';
     for (var i = 0; i < a; i++) {
-        for (var j = a - i - 1; j >= 0; j--) {
-            b += ' ';
+        //console.log('i:' + i);
+        var b = '';
+        for (var j = 0; j < a - i - 1; j++) {
+            b += '0';
         }
         for (var k = 0; k < i + 1; k++) {
-            b += '*';
+            b += '* ';
         }
-        console.log(b);
+        console.log(b + '\n');
     }
 }
 pyramid(3);
