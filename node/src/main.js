@@ -10,12 +10,22 @@ function pyramid(a) {
         //console.log('i:' + i);
         var b = '';
         for (var j = 0; j < a - i - 1; j++) {
-            b += '0';
+            b += ' ';
         }
-        for (var k = 0; k < i + 1; k++) {
-            b += '* ';
+        for (var k = 0; k < 2 * i - 1; k++) {
+            b += '*';
         }
         console.log(b + '\n');
     }
 }
-pyramid(3);
+//var numS:string = prompt("请输入一个数字");
+//var num:number = parseInt(numS);
+var numS;
+process.stdin.on('readable', function () {
+    numS = process.stdin.read();
+    if (numS !== null) {
+        process.stdout.write("data: " + process);
+    }
+});
+var num = +numS;
+pyramid(num);
