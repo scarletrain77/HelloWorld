@@ -38,4 +38,5 @@ ArrayList <Vector3> a = new ArrayList<Vector3>();
 
 
 ***
- <img src="./P10.JPG" width = "300" height = "200" alt="小草" align=center />
+<p align = center>附上摄影课的照片~</p>
+ <p align = center><img src="./P10.JPG" width = "300" height = "200" alt="小草"/></p>
