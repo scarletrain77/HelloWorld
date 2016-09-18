@@ -1,3 +1,5 @@
+
+//var prompt = require('C:\Program Files (x86)\Egret\Egret Wing 3\resources\app\extensions\typescript\server\typescript\lib\lib.d.ts');
 function pyramid (a:number):void{
     for(var  i:number = 0; i<a; i++){
         var b:string = '';
@@ -11,15 +13,10 @@ function pyramid (a:number):void{
     }
 }
 
-//var numS:string = prompt("请输入一个数字");
-//var num:number = parseInt(numS);
-var numS;
-process.stdin.on('readable', () => {
-  numS = process.stdin.read();
-  if (numS !== null) {
-    process.stdout.write(`data: ${process}`);
-  }
-});
+var numS:string = window.prompt("请输入一个数字","");
+var num:number = parseInt(numS);
+//var numS;
+//prompt
 
-var num:number = +numS;
+//var num:number = +numS;
 pyramid(num);
