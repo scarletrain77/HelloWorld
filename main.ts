@@ -1,4 +1,3 @@
-//var prompt = require('C:\Program Files (x86)\Egret\Egret Wing 3\resources\app\extensions\typescript\server\typescript\lib\lib.d.ts');
 function pyramid (a:number):void{
     for(var  i:number = 1; i <= a; i++){
         var b:string = '';
