@@ -1,5 +1,4 @@
-//var prompt = require('C:\Program Files (x86)\Egret\Egret Wing 3\resources\app\extensions\typescript\server\typescript\lib\lib.d.ts');
-function pyramid(a) {
+﻿function pyramid(a) {
     for (var i = 1; i <= a; i++) {
         var b = '';
         for (var j = 0; j <= a - i - 1; j++) {
